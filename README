@@ -1,0 +1,7 @@
+Slides for talk: Distributed revision control with Git
+
+Describe the basic usage of Git and some of the principles behind
+distributed revision control and development.
+
+Compiling this document requires make utility, LaTeX, and Beamer
+presentation package.
