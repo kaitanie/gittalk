@@ -116,6 +116,50 @@ Benefits:
 \end{itemize}
 }
 
+\frame {
+\frametitle{High performance}
+
+High performance was a design requirement from the beginning.
+\begin{itemize}
+\item Mostly faster than any other revision control tool.
+\item Implemented in bare C.
+\item Local operations: no networking overhead. Supports committing
+  early and often, using diffs, logs and all the revision control
+  machinery all the time.
+\item Fast branching and merging.
+\item Highly compressed data storage.
+\item Scalability behaviour: optimized for project revisions instead
+  of single file versioning (example: log (diff) of the whole project
+  is generated faster than log (diff) of one file).
+\end{itemize}
+
+Performance is not only about doing the same thing faster. It allows
+users to work in a completely different manner!
+
+}
+
+\frame {
+\frametitle{Content tracker}
+
+It's not about ``file revisions''...
+\begin{itemize}
+\item What combination of file revisions is needed for a certain
+  product version? In CVS tagging is the only way to overcome this
+  limitation...
+\item Thinking in terms of individual file revisions is not
+  sufficient.
+\item The project revisions are much more important!
+\end{itemize}
+
+Git is not interested in files at all:
+\begin{itemize}
+\item It tracks content changes.
+\item Git can identify that a code fragment (e.g. a function) was
+  moved from one file to another!
+\item File renames are a special case of content tracking.
+\end{itemize}
+}
+
 \section{Basic Git usage}
 
 \subsection{Initialize a new repository}
