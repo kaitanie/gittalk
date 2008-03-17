@@ -238,6 +238,34 @@ Committing changes to a branch:
 
 \subsection{Merging}
 
+\frame {
+\frametitle{Merging branches}
+Merge branch ``next'' to ``master'':
+\begin{minipage}{1.0\linewidth}
+\begin{minipage}{0.5\linewidth}
+\includegraphics[scale=1.00]{merge.png}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item {\tt git checkout master}
+\item {\tt git merge new}
+\end{itemize}
+\end{minipage}
+\end{minipage}
+\vskip0.3cm
+
+The benefits of branching and merging:
+\begin{itemize}
+\item Separate development and stable lines.
+\item Topic branches: develop a feature in a branch, test it and merge
+  to mainline when it is stable enough.
+\item Branches encourage ``speculative'' development, i.e. asking the
+  question ``What if?''
+\item In a distributed system every developer is working on a separate
+  branch.
+\end{itemize}
+}
+
 \section{Collaborative development}
 
 \section{Git ecosystem}
