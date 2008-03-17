@@ -36,6 +36,35 @@ Institute of Physics} \date{\tiny \meetingdate \\ (Document built:
 
 \subsection{History: from centralized to distributed}
 
+\frame {
+\frametitle{History of (open source) revision control}
+The evolution of revision control:
+\begin{itemize}
+\item {\em Centralized lock-modify-unlock}
+\begin{itemize}
+\item RCS, SCCS
+\item Tracked one file on one computer.
+\end{itemize}
+\item {\em Centralized copy-modify-merge}
+\begin{itemize}
+\item CVS (Concurrent Versions System), SVN (Subversion)
+\item Track multiple files.
+\item Multiple working copies and developers (possibly on different computers).
+\item One central master repository on one computer.
+\end{itemize}
+\item {\em Distributed}
+\begin{itemize}
+\item Git, Bitkeeper (commercial) (also Mercurial, Bazaar-ng, Darcs)
+\item Clone repositories: every developer has full revision history of
+  the project.
+\item No repository is inherently more important than any other
+  repository.
+\item The ``official version'' is a social notion, not a technical
+  one!
+\end{itemize}
+\end{itemize}
+}
+
 \subsection{Distributed}
 
 \subsection{High performance}
