@@ -9,9 +9,6 @@ REMOTENAME = gittalk.pdf
 
 all: pdf
 
-upload: all
-	scp inclabla-status.pdf kaitanie@melkki.cs.helsinki.fi:~/public_html/$(REMOTENAME)
-
 pdf: $(SOURCEFILE).tex 
 	$(PDFGENERATOR) $(SOURCEFILE)
 	$(PDFGENERATOR) $(SOURCEFILE)
