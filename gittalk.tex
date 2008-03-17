@@ -195,6 +195,47 @@ Visualization tool (see Fig):
 
 \subsection{Branching}
 
+\frame{
+\frametitle{Branching and switching branches}
+Creating a new branch:
+\begin{minipage}{1.0\linewidth}
+\begin{minipage}{0.5\linewidth}
+\includegraphics[scale=1.00]{new-branch.png}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item {\tt git branch new}
+\end{itemize}
+\end{minipage}
+\end{minipage}
+\begin{minipage}{1.0\linewidth}
+\begin{minipage}{0.5\linewidth}
+\includegraphics[scale=1.00]{branches.png}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item {\tt edit file.txt}
+\item {\tt git commit -a -m "Third."}
+\item {\tt edit file.txt}
+\item {\tt git commit -a -m "Fourth."}
+\end{itemize}
+\end{minipage}
+\end{minipage}
+Committing changes to a branch:
+\begin{minipage}{1.0\linewidth}
+\begin{minipage}{0.5\linewidth}
+\includegraphics[scale=1.00]{branch-commit.png}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item {\tt git checkout new}
+\item {\tt edit file.txt}
+\item {\tt git commit -a -m "Commit 1."}
+\end{itemize}
+\end{minipage}
+\end{minipage}
+}
+
 \subsection{Merging}
 
 \section{Collaborative development}
