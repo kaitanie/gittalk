@@ -162,9 +162,36 @@ Git is not interested in files at all:
 
 \section{Basic Git usage}
 
-\subsection{Initialize a new repository}
+\subsection{Basic operations}
 
-\subsection{Committing}
+\frame {
+\frametitle{Basic operations}
+\begin{minipage}{1.0\linewidth}
+\begin{minipage}{0.5\linewidth}
+\includegraphics[scale=0.30]{images/first.png}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+Creating a new repository:
+\begin{itemize}
+\item {\tt mkdir test ; cd test}
+\item {\tt git init}
+\end{itemize}
+Making commits:
+\begin{itemize}
+\item {\tt edit file.txt}
+\item {\tt git add file.txt}
+\item {\tt git commit -m "First."}
+\item {\tt edit file.txt}
+\item {\tt git add file.txt}
+\item {\tt git commit -m "Second."}
+\end{itemize}
+Visualization tool (see Fig):
+\begin{itemize}
+\item {\tt gitk}
+\end{itemize}
+\end{minipage}
+\end{minipage}
+}
 
 \subsection{Branching}
 
