@@ -268,6 +268,64 @@ The benefits of branching and merging:
 
 \section{Collaborative development}
 
-\section{Git ecosystem}
+\subsection{Publishing a repository on the web}
+
+\frame {
+\frametitle{Publishing a repository on the web}
+
+Prepare an empty public repository as {\tt user} on machine {\tt
+example.org}:
+\begin{itemize}
+\item {\tt cd \$HOME/public\_html}  (at CERN: {\tt cd \$HOME/public/html})
+\item {\tt mkdir myproject.git; cd myproject.git}
+\item {\tt git --bare init}
+\item {\tt chmod a+x hooks/post-update}
+\item {\tt git update-server-info}
+\end{itemize}
+\vskip0.5cm
+Push your work to that repository:
+\begin{itemize}
+\item {\tt git remote add public ssh://user@example.org/path/to/myproject.git}
+\item {\tt git push public refs/heads/master:refs/heads/master}
+\end{itemize}
+}
+
+\subsection{Push/Pull model}
+\frame {
+\frametitle{Pushing and pulling changes}
+Each developer has his/her own repository.
+\vskip0.3cm
+\begin{itemize}
+\item Push = Put changes to a remote repository.
+\item Pull = {\em fetch} changes from remote repository and {\em
+  merge} them.
+\end{itemize}
+\vskip0.3cm
+Sharing changes between developers:
+\begin{itemize}
+\item Maintainer pulls from developers.
+\begin{itemize}
+\item Probably the simplest distributed workflow.
+\item Clearly defined ``official version''.
+\end{itemize}
+\item Everyone pulls from everyone else.
+\begin{itemize}
+\item Mainly useful for few developers.
+\item Probably confusing for new users.
+\end{itemize}
+\item All developers push to a shared repository (CVS like workflow).
+\begin{itemize}
+\item Does not take advantage of distribution. Everyone working in the
+  same sandbox. Not really recommended.
+\end{itemize}
+\end{itemize}
+}
+
+\section{Conclusions}
+
+\frame {
+\frametitle{Summary and conclusions}
+
+}
 
 \end{document}
